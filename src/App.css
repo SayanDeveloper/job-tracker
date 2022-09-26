@@ -1,0 +1,11 @@
+.content-area {
+    padding-top: 70px;
+    width: 100%;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 960px) {
+    .content-area {
+        width: calc(100vw - 270px) !important;
+    }
+}
