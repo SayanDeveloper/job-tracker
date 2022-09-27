@@ -1,11 +1,16 @@
 .content-area {
-    padding-top: 70px;
-    width: 100%;
-    margin-left: auto;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: calc(100vw - 60px) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (min-width: 960px) {
     .content-area {
-        width: calc(100vw - 270px) !important;
+        margin-left: 270px;
+        width: calc(100vw - 330px) !important;
     }
 }

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 
 const Dashboard = React.lazy(() => import('./pages/Dashboard'));
 const Applications = React.lazy(() => import('./pages/Applications'));
+const FAQs = React.lazy(() => import('./pages/FAQs'));
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Dashboard />} />
             <Route path="/applications" element={<Applications />} />
+            <Route path="/faq" element={<FAQs />} />
           </Routes>
         </div>
       </Suspense>

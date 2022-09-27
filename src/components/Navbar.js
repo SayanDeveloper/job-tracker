@@ -27,6 +27,9 @@ const Navbar = () => {
                 <NavLink to="/applications" onClick={() => setSideNavOpen(false)} className='each-el'>
                     All Applications
                 </NavLink>
+                <NavLink to="/faq" onClick={() => setSideNavOpen(false)} className='each-el'>
+                    FAQs
+                </NavLink>
             </div>
         </>
     )
