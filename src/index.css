@@ -5,6 +5,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.2 !important;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+p {
+  margin-bottom: 5px !important;
 }
 
 code {

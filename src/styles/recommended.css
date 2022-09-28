@@ -1,0 +1,65 @@
+.rec-job-box {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.185);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 700px;
+    cursor: pointer;
+    max-width: calc(100% - 30px) !important;
+    transition: all 0.2s;
+}
+.rec-job-box:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.089);
+}
+
+.rec-job-box .flex-between  {
+    margin-bottom: 15px;
+}
+
+.role-name-location .job-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.role-name-location .comp-name  {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: rgb(87, 87, 87);
+}
+.role-name-location .location  {
+    color: rgb(87, 87, 87);
+}
+
+.extra-detail {
+    gap: 30px;
+}
+.extra-detail .special-label {
+    margin-bottom: 5px;
+    color: rgb(0, 121, 226);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.comp-logo img {
+    width: 80px;
+}
+
+@media screen and (max-width: 750px) {
+    .rec-job-box {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .rec-job-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .rec-job-box .flex-between {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
