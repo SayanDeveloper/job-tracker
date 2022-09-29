@@ -1,10 +1,17 @@
 import React from 'react'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/Dashboard.css";
+import { data } from '../dummyData/dummyApplicationData';
+import TableMapping from '../components/TableMapping';
 
 const Applications = () => {
     return (
-        <div>
-        Here you can see all job applications
-        </div>
+        <>
+            <h1 className='center-text'>All Applications</h1>
+            <div className='center-text mb-4'>Here you can see your all job applications</div>
+            <TableMapping tableBody={data} />
+            <div className='mt-4'></div>
+        </>
     )
 }
 

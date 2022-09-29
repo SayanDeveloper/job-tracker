@@ -10,7 +10,7 @@ const RecommendedJob = ({jobDetails}) => {
 
     return (
         <>
-            <CustomModal showModal={showModal} setShowModal={setShowModal}>
+            <CustomModal showModal={showModal} setShowModal={setShowModal} type="recommended">
                 <JobModalBody data={jobDetails} />
             </CustomModal>
             <div className='rec-job-box' onClick={() => setShowModal(true)}>

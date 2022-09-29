@@ -10,6 +10,10 @@
     /* border-collapse: collapse; */
 }
 
+.each-row {
+    cursor: pointer;
+}
+
 .table .oddrow {
     background-color: #f6f7f7;
 }

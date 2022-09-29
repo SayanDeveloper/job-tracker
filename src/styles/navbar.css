@@ -116,3 +116,10 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 750px) {
+    .top-navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

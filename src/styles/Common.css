@@ -28,6 +28,16 @@
     font-weight: 600;
 }
 
+.extra-detail {
+    gap: 30px;
+}
+.extra-detail .special-label {
+    margin-bottom: 5px;
+    color: rgb(0, 121, 226);
+    font-weight: 500;
+    font-size: 15px;
+}
+
 @media screen and (max-width: 750px) {
     .each-card {
         height: 100px;
