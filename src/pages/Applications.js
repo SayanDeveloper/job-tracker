@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Dashboard.css";
 import { data } from '../dummyData/dummyApplicationData';
 import TableMapping from '../components/TableMapping';
 
-const Applications = () => {
+const Applications = ({setProgress}) => {
+
+    useEffect(() => {
+        setTimeout(() => {
+            setProgress(100);
+        }, 100);
+    }, [])
+    
     return (
         <>
             <h1 className='center-text'>All Applications</h1>

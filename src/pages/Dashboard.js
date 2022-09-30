@@ -8,11 +8,14 @@ import { recommended } from '../dummyData/dummyRecommendations';
 import "../styles/Dashboard.css"
 import RecommendedJob from '../components/RecommendedJob';
 
-const Dashboard = () => {
+const Dashboard = ({setProgress}) => {
 
     const [recentApplications, setRecetApplications] = useState([]);
     useEffect(() =>  {
         setRecetApplications(data.slice(0, 3))
+        setTimeout(() => {
+            setProgress(100);
+        }, 100);
     }, [])
     // console.log(data)
     return (

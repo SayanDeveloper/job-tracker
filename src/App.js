@@ -1,5 +1,5 @@
-import React, { Suspense, useState } from 'react';
-import { Route, Routes } from 'react-router';
+import React, { Suspense, useEffect, useState } from 'react';
+import { Route, Routes, useLocation } from 'react-router';
 import LoadingBar from "react-top-loading-bar";
 import Navbar from './components/Navbar';
 import './App.css';
@@ -11,22 +11,27 @@ const FAQs = React.lazy(() => import('./pages/FAQs'));
 
 function App() {
 
+  const { pathname } = useLocation();
   const [progress, setProgress] = useState(10);
+
+  useEffect(() => {
+    setProgress(20);
+  }, [pathname])
 
   return (
     <div>
       <LoadingBar
-        color='#2c7aff'
+        color='#FD841F'
         progress={progress}
-        waitingTime={50}
+        waitingTime={400}
       />
       <Navbar />
       <Suspense>
         <div className='content-area'>  
           <Routes>
-            <Route exact path="/" element={<Dashboard />} />
-            <Route path="/applications" element={<Applications />} />
-            <Route path="/faq" element={<FAQs />} />
+            <Route exact path="/" element={<Dashboard setProgress={setProgress} />} />
+            <Route path="/applications" element={<Applications setProgress={setProgress} />} />
+            <Route path="/faq" element={<FAQs setProgress={setProgress} />} />
           </Routes>
         </div>
       </Suspense>
