@@ -17,7 +17,7 @@ export const data = [
         company: "Company 2",
         status: "Applied",
         date: "27th September, 2022",
-        stage: 3
+        stage: 4
     },
     {
         id: "5325",
@@ -113,6 +113,12 @@ export const stageData = [
         Description: "You are shortlisted for the specific role. Now you are connected with HR and will be communicated for further steps",
         color: "#b54708",
         bg: "#fffaeb"
+    },
+    {
+        title: "Under Task",
+        Description: "After considering your candidature, you have been assigned a task to be completed within the deadline mentioned by your hiring contact.",
+        color: "#FD841F",
+        bg: "#fafaeb"
     },
     {
         title: "Selected",

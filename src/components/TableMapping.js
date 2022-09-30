@@ -3,6 +3,7 @@ import Tag from './Tag'
 import CustomModal from './CustomModal';
 import { stageData } from '../dummyData/dummyApplicationData';
 import "../styles/Table.css"
+import JobApplicationStatus from './JobApplicationStatus';
 
 const TableMapping = ({tableBody}) => {
     
@@ -40,42 +41,6 @@ const TableMapping = ({tableBody}) => {
                 </div>
             </div>
         </>
-    )
-}
-
-const JobApplicationStatus = ({data}) => {
-    return (
-        <div>
-            <h4>{data?.role}</h4>
-            <p className='fs-5'>{data?.company}</p>
-            <p>Location: {data?.location}</p>
-            
-            <div className='flex extra-detail mb-2'>
-                <div>
-                    <div className='special-label'>
-                        Duration
-                    </div>
-                    <div>
-                        {data?.duration}
-                    </div>
-                </div>
-                <div>
-                    <div className='special-label'>
-                        Stipend
-                    </div>
-                    <div>
-                        {data?.salary}
-                    </div>
-                </div>
-            </div>
-            <div>
-                Your current stage of application is : <Tag textColor={stageData[data?.stage - 1].color} text={stageData[data?.stage - 1].title} />
-            </div>
-            <div className='mt-2'>
-                That means :
-                <p>{stageData[data?.stage - 1].Description}</p>
-            </div>
-        </div>
     )
 }
 

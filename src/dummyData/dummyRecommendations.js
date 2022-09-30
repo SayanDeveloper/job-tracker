@@ -20,7 +20,7 @@ export const recommended = [
         skills: ["JavaScript", "NodeJs", "ExpressJs", "MongoDb", "AWS"]
     },
     {
-        role: "Full Developer Intern",
+        role: "Full Stack Developer Intern",
         company: "Company Name 3",
         salary: "50000",
         posted: "29th September, 2022",
