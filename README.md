@@ -13,7 +13,7 @@
 
 ## To run in localhost
 - open terminal in root directory of the repo
-- type `npm install` ans press enter to install all dependeincies
+- type `npm install` and press enter to install all dependencies
 - then type `npm start` to start the local react server
 - or you can type `npm build` to get the production build
 
